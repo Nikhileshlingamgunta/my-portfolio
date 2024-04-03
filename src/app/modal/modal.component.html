@@ -1,0 +1,191 @@
+<ng-template #content let-modal>
+	<div class="modal-body">	
+				<div class="skills__container container grid section__border">
+					<!-- Skills - 1 -->
+					<div class="skills__content">
+						<h3 class="skills__title">
+							 Languages
+						</h3>
+
+						<div class="skills__info">
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/html-1.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">HTML</h3>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/css-3.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">CSS</h3>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/logo-javascript.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">JavaScript</h3>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/python-5.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">Python</h3>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/c--4.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">C#</h3>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/java.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">Java</h3>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/c-1.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">C</h3>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/c.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">C++</h3>
+							</div>
+						</div>
+					</div>
+
+					<!-- skills - 2 -->
+					<div class="skills__content">
+						<h3 class="skills__title">
+							 Frameworks
+						</h3>
+
+						<div class="skills__info">
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/dot-net-core-7.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">.NET Core</h3>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/react-2.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">ReactJS</h3>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/nodejs-2.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">NodeJS</h3>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/angular-icon-1.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">AngularJS</h3>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/tailwindcss.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">TailWindCSS</h3>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/bootstrap-5-1.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">Bootstrap</h3>
+							</div>
+						</div>
+					</div>
+
+					<!-- skills - 3 -->
+					<div class="skills__content">
+						<h3 class="skills__title">
+							 Tools
+						</h3>
+
+						<div class="skills__info">
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/figma-1.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">Figma</h3>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/sqlite.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">SQLite</h3>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/jira-1.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">Jira</h3>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/postman.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">Postman</h3>
+							</div>
+
+							<div class="skills__data">
+								<div class="skills__blob">
+									<img src="./assets/Images/matlab.SVG" alt="skills image">
+								</div>
+								<h3 class="skills__name">MATLAB</h3>
+							</div>
+						</div>
+					</div>
+		</div>
+	</div>
+</ng-template>
+
+<button class="custom-btn" (click)="open(content)">
+	<span class="btn-text">S K I L L S</span>
+</button>
+
+  
+
+<!-- <hr /> -->
+
+<!-- <pre>{{ closeResult }}</pre> -->
+
+
+<!-- <div class="modal-header">
+			<h4 class="modal-title" id="modal-basic-title">SKILLS</h4>
+		</div>
+		<div class="modal-body">
+			<form>
+				<div class="mb-3">
+				<ul>
+					<li>Languages: Python, JavaScript, HTML, CSS, C#, Java, SQL, C, C++</li>
+					<li>Frameworks: .NET, ReactJS, NodeJS, AngularJS, TailWindCSS, Bootstrap</li>
+					<li>Tools: SQLite, Figma, Jira, GitHub, Android Studio, LaTeX, PowerBI, Postman, MATLAB</li>
+				</ul>
+				</div>
+			</form>
+		</div> -->

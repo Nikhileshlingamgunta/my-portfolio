@@ -1,0 +1,16 @@
+<!-- stats.component.html -->
+<div id="stats-content" class="video-blog-container">
+    <video autoplay loop muted class="video-background">
+        <source src="./assets/Videos/bulb.mp4" type="video/mp4">
+    </video>
+    <div #skillsContainer class="skills-container">
+        <div *ngFor="let skill of skills" class="skill">
+        <div class="progress-circle" [ngStyle]="getCircleBackground(skill.currentPercentage)"
+        [ngClass]="{'completed': skill.animationPlayed}">
+            <span>{{ skill.currentPercentage }}%</span>
+        </div>
+        <p>{{ skill.name }}</p>
+        </div>
+    </div>
+</div>
+  

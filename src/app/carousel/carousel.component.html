@@ -1,0 +1,46 @@
+@if (images) {
+	<ngb-carousel>
+		<ng-template ngbSlide>
+			<div class="picsum-img-wrapper">
+				<img [src]="images[0]" alt="Random first slide" />
+			</div>
+			<div class="carousel-caption">
+				<h3>Global Student Celebrations 2022</h3>
+				<p>"Unity in diversity, our cultural fest celebrates the vibrant tapestry of our university life."</p>
+			</div>
+		</ng-template>
+
+		<ng-template ngbSlide>
+			<div class="picsum-img-wrapper">
+				<img [src]="images[1]" alt="Random third slide" />
+			</div>
+			<div class="carousel-caption">
+				<h3>Resilience</h3>
+				<p>"View every hurdle as a stepping stone, not a stumbling block."</p>
+			</div>
+		</ng-template>
+
+		<ng-template ngbSlide>
+			<div class="picsum-img-wrapper">
+				<img [src]="images[3]" alt="Random second slide" />
+			</div>
+			<div class="carousel-caption">
+				<h3>PFW Carnival</h3>
+				<p>"Together, kind people create not just a team, but a force of unwavering strength and positivity."</p>
+			</div>
+		</ng-template>
+		
+		<ng-template ngbSlide>
+			<div class="picsum-img-wrapper">
+				<img [src]="images[2]" alt="Random third slide" />
+			</div>
+			<div class="carousel-caption">
+				<h3>The Opportunity</h3>
+				<p>"Life, like cricket, throws you deliveries to defend, leave, or hit for six - the choice defines your game."</p>
+			</div>
+		</ng-template>
+
+		
+
+	</ngb-carousel>
+}

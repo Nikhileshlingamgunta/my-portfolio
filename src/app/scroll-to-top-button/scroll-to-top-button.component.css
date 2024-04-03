@@ -1,0 +1,49 @@
+/* scroll-to-top-button.component.css */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: none; /* Add yellow outline */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    opacity: 0.8;
+    transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #000000;
+    opacity: 1;
+    transform: scale(1.1); /* Scale up on hover for a subtle effect */
+    box-shadow: 0 0 20px #ffd500,
+    0 0 40px #ffd500; /* Increase box shadow on hover */
+
+  }
+  
+  .scroll-to-top-hidden {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  /* Add media query for responsiveness */
+@media only screen and (max-width: 600px) {
+    .scroll-to-top {
+      bottom: 10px;
+      right: 10px;
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+    }
+  }
+  
+  

@@ -1,0 +1,126 @@
+.custom-btn {
+    position: relative;
+    padding: 80px;
+    width: 100vw;
+    border: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.3s ease; /* Transition for the button itself */
+    cursor: pointer;
+    /* right: 50%; */
+  }
+  
+  .custom-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 100%;
+    background-image: url('/assets/Images/certifications4.JPG');
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.3s ease; /* Transition for the background blur */
+    /* z-index: -1; */
+  }
+  
+  .btn-text {
+    position: relative;
+    z-index: 1;
+    color: #fff; /* Initial text color, adjust as needed */
+    font-size: 0px; /* Initial font size */
+    opacity: 0; /* Make text invisible initially */
+    transition: font-size 0.3s ease, opacity 0.3s ease; /* Transition for text appearance and font size */
+  }
+  
+  .custom-btn:hover::before {
+    filter: blur(8px); /* Blur effect on hover */
+  }
+  
+  .custom-btn:hover .btn-text {
+    opacity: 1; /* Make text visible on hover */
+    font-size: 40px; /* Increase font size on hover */
+  }
+
+.card-body {
+  overflow: hidden;
+}
+  
+.certifications {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.certification-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.certification-card {
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  z-index: 2;
+  box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255);
+}
+
+.certification-card:hover{
+  box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 15px black;
+}
+
+.certification-logo {
+  width: 500px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 10%;
+}
+
+.certification-info h3 {
+  margin: 10px 0;
+  color: #333;
+  justify-content: center;
+  text-align: center;
+}
+
+.certification-info p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.issuer, .date {
+  color: #666;
+}
+
+.description {
+  margin-top: 10px;
+  text-align:justify;
+  font-weight: 400;
+}
+
+.video-blog-container {
+  position: relative;
+  width: 100vw;
+  height: 75vh; /* Adjust based on your needs */
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the full area */
+  z-index: 1; /* Behind the blog posts */
+}

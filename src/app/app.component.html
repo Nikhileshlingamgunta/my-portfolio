@@ -1,0 +1,35 @@
+<!-- In your app.component.html -->
+<section class="p-wrapper">
+        <div class="video-blog-container">
+        <video autoplay loop muted class="video-background">
+            <source src="./assets/Videos/bg4.mp4" type="video/mp4">
+        </video>
+    <!-- Header -->
+    <app-header></app-header>
+
+    <!-- Scroll-To-Top-Button -->
+    <app-scroll-to-top-button></app-scroll-to-top-button>
+
+    <!-- Home -->
+    <app-home></app-home>
+</div> 
+    <!-- Portfolio -->
+    <div id="portfolio-content" class="modal-container">
+        <app-modal class="portfolio-element"></app-modal>
+        <app-experience class="portfolio-element"></app-experience>
+        <app-projects class="portfolio-element"></app-projects>
+        <app-certifications class="portfolio-element"></app-certifications>
+    </div>
+    <!-- Blog  -->
+    <app-blog></app-blog>
+
+    <!-- Statistics -->
+    <app-stats></app-stats>
+          
+    <!-- Image Carousel -->
+    <app-carousel></app-carousel>
+
+    <!-- Reach Me -->
+    <app-reach></app-reach>
+
+</section>

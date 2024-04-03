@@ -1,0 +1,241 @@
+.contact-container {
+  display: flex; 
+  flex-wrap: wrap; /* This will allow items to wrap on smaller screens */
+  justify-content: space-between; /* This adds space between your two main containers */
+  align-items: flex-start; /* This will align the items at the top */
+}
+
+  .social-links {
+    margin-bottom: 1em;
+  }
+  
+  .contact-form .social-links a {
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .contact-info a{
+    margin-top: 5%;
+    padding-left: 4px;
+    margin-right: 10px;
+  }
+  
+  .contact-form form {
+    margin-bottom: 1em;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 1em;
+    margin-top: auto;
+  }
+  
+  .form-group input{
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Adjust the value for rounded corners */
+    outline: none; /* Remove default outline on focus */
+  }
+  .form-group input:focus{
+    border-color: white; /* Change the border color on focus */
+    box-shadow: 0 0 5px white(0, 123, 255, 0.5); /* Add a subtle box-shadow on focus */
+  }
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    width: 70%;
+    padding: 0.5em;
+  }
+  
+  form .btn-warning{
+    min-height: 50px;
+    border: 0;
+    border-radius: 0;
+    padding: 10px 35px;
+    font-weight: 500;
+    width: 455px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .contact-section {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background: linear-gradient(55deg, #05536d, #230902);
+    text-align: center;
+    padding: 10px;
+    width: 45%;
+  }
+  
+  .contact-section h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  
+  .contact-section h1 {
+    margin-top: 10px;
+    font-size: 48px;
+    font-weight: normal;
+    font-weight: 600;
+  }
+  
+  .contact-methods {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  
+  .contact-method {
+    background: linear-gradient(55deg, #05536d, #230902);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .contact-method a{
+    color: white;
+  }
+  .contact-method a:hover{
+    text-decoration: underline;
+  }
+  
+  .icon {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Adjust size to match your design */
+    margin-bottom: 20px;
+    color: white;
+    background: linear-gradient(to right, #13bae4, #000000);
+  }
+  
+  .map-container {
+    margin-top: 20px;
+  }
+  
+  /* Add media query for responsive adjustments */
+  @media (max-width: 700px) {
+    .contact-methods {
+      flex-direction: column;
+    }
+  }
+  
+
+  .contact-form-container {
+    background: linear-gradient(45deg, #05536d, #230902);
+    color: white;
+    padding: 40px;
+    max-width: 800px;
+  }
+  .contact-info,
+.contact-form-container {
+  flex: 1; /* This will allow both children to grow and take up equal space */
+  min-width: 300px; /* This will ensure that the flex children don't get too small */
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Stack the flex children on small screens */
+  }
+}
+  
+  .contact-form-container h2 {
+    color: white;
+    text-align: center;
+  }
+  
+  .contact-form-container p {
+    text-align: center;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    margin-bottom: 5px;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    padding: 10px;
+    border: 2px solid #fbfaf6; /* Adjust to match your theme */
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .input-group textarea {
+    height: 100px;
+    resize: none; /* Prevent resizing */
+  }
+  
+  .send-message-btn {
+    background: linear-gradient(to right, #13bae4, #000000);; 
+    color: white;
+    padding: 10px 20px;
+    width: 640px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    transition: background-color 0.3s;
+  }
+  
+  .send-message-btn:hover {
+    background-color: #040404; /* Darken button color on hover */
+    color: #26b5e4;
+    font-weight: 500;
+  }
+  
+  .back-to-top {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .back-to-top a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .input-group {
+      width: 100%;
+    }
+  }
+
+  .contact-page-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns each taking up half of the container's width */
+    width: 100vw; /* Set the width of the container to the full viewport width */
+    margin: 0; /* Reset default margins */
+    overflow: hidden; /* Prevent horizontal scroll */
+}
+
+/* Additional responsive behavior, if desired */
+@media (max-width: 960px) {
+    .contact-page-container {
+        grid-template-columns: 1fr; /* Stack the columns on smaller screens */
+    }
+}
+
+.contact-section,
+.contact-form-container {
+    width: 100%; /* Ensure the children take up 100% of their column width */
+    /* Your existing styles */
+}
+
+

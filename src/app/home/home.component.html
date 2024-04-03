@@ -1,0 +1,51 @@
+<section>
+    <div id="home-content" class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="p-profile">
+                    <div class="p-profile-front"></div>
+                    <div class="p-profile-back"></div>
+                </div>
+            </div>
+            <div class="col-sm-7 p-rgt-sec">
+                <div>
+                        <span class="p-tag">Computer Science</span>
+                        <h1 class="p-name mt-4">Nikhilesh Lingamgunta</h1>
+                        <p class="p-des mt-3 mb-4">
+                          As a Full Stack Developer with a Master's in Computer Science, I thrive on crafting dynamic web solutions that merge technical finesse with aesthetic clarity. My expertise spans the full spectrum of development, from pixel-perfect front-end to scalable back-end services. I take pride in my ability to translate complex problems into elegant, user-friendly applications.</p>
+                        <p class="p-des1">"<b>W</b>elcome to my portfolio, a showcase of innovation, efficiency, and design."</p>
+
+                        <button
+                          type="button"
+                          class="btn btn-outline-primary"
+                          (click)="toggleAndAnimate()"
+                          [attr.aria-expanded]="!isCollapsed"
+                          aria-controls="collapseExample">Read More</button>
+                        <button type="button" class="btn btn-outline-primary" (click)="downloadCV()" style="margin-left: 20px;">Download CV
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13 10H18L12 16L6 10H11V3H13V10ZM4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19Z"></path></svg>
+                        </button>
+                
+                    </div>
+                    <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+                      <!-- <div class="card"> -->
+                        <div class="stats-container">
+                          <div #statCard class="stat-card" *ngFor="let stat of stats">
+                            <h3>{{ stat.count }}+</h3>
+                            <p>{{ stat.text }}</p>
+                          </div>
+                        </div>   
+                      <!-- </div> -->
+                                                                                    
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+

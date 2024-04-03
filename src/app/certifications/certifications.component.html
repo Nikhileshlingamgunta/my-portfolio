@@ -1,0 +1,65 @@
+
+<button class="custom-btn" 
+        (click)="toggleCollapse()"
+        [attr.aria-expanded]="!isCollapsed"
+        aria-controls="collapseExample">
+    <span class="btn-text">C E R T I F I C A T I O N S</span>
+</button>
+
+
+<div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+    <div class="video-blog-container">
+        <video autoplay loop muted class="video-background">
+            <source src="./assets/Videos/certificates3.mp4" type="video/mp4">
+        </video>
+        <section class="certifications">
+            <div class="certification-container">
+              <div class="certification-card">
+                <img src="./assets/Images/certificates1.JPG" alt="Certification Logo" class="certification-logo">
+                <div class="certification-info">
+                  <h3>Machine Learning Foundations</h3>
+                  <p class="issuer">Issued by: <strong>University of Washington</strong></p>
+                  <p class="date">Date: <strong>August 2021</strong></p>
+                  <p class="description">Certified for the excellence of completing "Machine Learning Foundations: A case study Approach" from University of Washington</p>
+                </div>
+              </div>
+              <!-- Repeat for other certifications -->
+              <div class="certification-card">
+                <img src="./assets/Images/certificates2.JPG" alt="Certification Logo" class="certification-logo">
+                <div class="certification-info">
+                  <h3>Data Science: Hands-on with Python, Keras and Tesorflow</h3>
+                  <p class="issuer">Issued by: <strong>Vellore Institute of Technology</strong></p>
+                  <p class="date">Date: <strong>October 2019</strong></p>
+                  <p class="description">Certified as Student Coordinator for the 5-Days Faculty Development Program titled” Data Science: Hands-on with Python, Keras and Tesorflow”.</p>
+                </div>
+              </div>
+
+              <div class="certification-card">
+                <img src="./assets/Images/certificates4.JPG" alt="Certification Logo" class="certification-logo">
+                <div class="certification-info">
+                  <h3>Emotion Detector and Counsellor Chat-box</h3>
+                  <p class="issuer">Issued by: <strong>International Journal of Science and Research</strong></p>
+                  <p class="date">Date: <strong>November 2021</strong></p>
+                  <p class="description">Certified for the excellence of publishing a paper on “Emotion Detector and Counsellor Chat-box” in IJSR, Volume 10 Issue 11,
+                    November 2021, ISSN: 2319-7064.</p>
+                </div>
+              </div>
+
+              <div class="certification-card">
+                <img src="./assets/Images/certificates3.JPG" alt="Certification Logo" class="certification-logo">
+                <div class="certification-info">
+                  <h3>Navigation Master</h3>
+                  <p class="issuer">Issued by: <strong>International Journal of Scientific and Engineering Research</strong></p>
+                  <p class="date">Date: <strong>September 2021</strong></p>
+                  <p class="description">Certified for the excellence of publishing a paper on “Navigation Master: Design and Implementation of Path Planning Algorithm for a known robot in a dynamic
+                    environment” in the IJSER. Volume 12, Issue9, September 2021 Edition, ISSN: 2229-
+                    5518.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          </div>
+</div>
+
+
+

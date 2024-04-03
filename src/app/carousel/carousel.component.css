@@ -1,0 +1,15 @@
+.picsum-img-wrapper img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 70vh; /* Make sure the image does not exceed the height of the viewport */
+    object-fit: cover; /* This will cover the area of the .picsum-img-wrapper, potentially cropping the image */
+  }
+  
+  p{
+    font-size: larger;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 600;
+  }
