@@ -155,3 +155,48 @@ border-radius: 50%;
 .timeline-content .content p{
 font-size: 16px;
 }
+
+
+/* Existing CSS... */
+
+@media (max-width: 768px) {
+  .custom-btn {
+    padding: 20px; /* Reduced padding */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .custom-modal-width {
+    max-width: 95%; /* Adjust modal width for smaller devices */
+  }
+
+  .timeline-row .timeline-column {
+    flex: 1 1 100%; /* Full width for smaller screens */
+  }
+
+  .timeline-column .title, .timeline-content .content h3, .timeline-content .content p {
+    font-size: smaller; /* Adjust font size for readability */
+  }
+
+  .timeline-box {
+    border-left: 3px solid rgb(255, 255, 255); /* Thinner border for smaller screens */
+  }
+  
+  .timeline-content .content {
+    padding: 15px; /* Reduced padding inside cards */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .custom-btn .btn-text {
+    font-size: 14px; /* Even smaller text for very small devices */
+  }
+
+  .timeline-content .content {
+    margin-bottom: 15px; /* Less space between cards */
+  }
+
+  .timeline-column .title {
+    font-size: 18px; /* Smaller titles */
+  }
+}

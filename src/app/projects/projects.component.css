@@ -183,3 +183,31 @@
   object-fit: cover;
   color: black;
 }
+
+
+@media (max-width: 768px) {
+  .overlay h3, .para {
+      font-size: 20px; /* Smaller text for medium devices */
+  }
+
+  .btn {
+      padding: 8px 16px; /* Smaller buttons */
+      font-size: 0.9rem;
+  }
+  .box-area {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* Full width cards */
+}
+
+.box, .box img {
+    height: auto; /* Adjust height automatically */
+}
+.modal-body, .modal-img {
+  padding: 20px; /* Add some padding around the content */
+  width: auto; /* Adjust width to fit small screens */
+  height: auto; /* Adjust height automatically */
+}
+.social-icon {
+  padding: 10px; /* Larger touch area */
+  margin: 0 5px; /* Space out icons */
+}
+}

@@ -155,4 +155,64 @@
   }
   
    
+  /* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .video-blog-container {
+    height: 30vh; /* Reduce height on smaller screens */
+  }
+
+  .skills-container {
+    flex-direction: column; /* Stack skills vertically on smaller screens */
+    align-items: center; /* Center skills containers */
+    padding: 10px;
+  }
+
+  .skill {
+    margin: 20px 0; /* Increase vertical margin */
+  }
+
+  .progress-circle {
+    width: 150px; /* Reduce size for smaller screens */
+    height: 150px; /* Reduce size for smaller screens */
+    margin-bottom: 10px;
+  }
+
+  .progress-circle span {
+    font-size: 20px; /* Reduce font size */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+
+  .icon {
+    width: 50px; /* Adjust icon size */
+    height: 50px; /* Adjust icon size */
+    font-size: 20px; /* Adjust icon font size */
+  }
+}
+@media (max-width: 480px) {
+  .video-blog-container {
+    height: 25vh; /* Further reduce height */
+  }
+
+  .progress-circle {
+    width: 120px; /* Further reduce size */
+    height: 120px; /* Further reduce size */
+  }
+
+  .progress-circle span {
+    font-size: 18px; /* Further reduce font size */
+  }
+
+  .skills-container {
+    padding: 5px;
+  }
+
+  p {
+    font-size: 0.8rem; /* Further adjust paragraph font size */
+  }
+}
+
+
   

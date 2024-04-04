@@ -124,3 +124,62 @@
   object-fit: cover; /* Ensure the video covers the full area */
   z-index: 1; /* Behind the blog posts */
 }
+
+
+/* Existing styles... */
+
+@media (max-width: 768px) {
+  .custom-btn {
+    padding: 20px; /* Reduce padding */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .custom-btn .btn-text {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .certification-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust grid layout */
+  }
+
+  .certification-logo {
+    width: 100%; /* Make logo responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 250px; /* Limit logo size */
+    margin-bottom: 15px;
+  }
+
+  .certifications, .video-blog-container {
+    height: auto; /* Adjust height */
+  }
+
+  .video-background {
+    object-fit: contain; /* Adjust fit to ensure full visibility */
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-btn {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .custom-btn .btn-text {
+    font-size: 16px; /* Further adjust font size for very small screens */
+  }
+
+  .certification-container {
+    grid-template-columns: 1fr; /* Stack cards vertically on very small screens */
+  }
+
+  .certification-card, .certification-info p, .certification-info h3 {
+    text-align: center; /* Center-align text for better readability */
+  }
+
+  .certification-info {
+    padding: 0 10px; /* Adjust padding */
+  }
+
+  .certification-logo {
+    max-width: 200px; /* Further limit logo size */
+  }
+}

@@ -232,6 +232,33 @@
     }
 }
 
+@media (max-width: 768px) {
+  .contact-page-container {
+      grid-template-columns: 1fr; /* Stack columns vertically on small screens */
+  }
+
+  .contact-section, .contact-form-container {
+      width: auto; /* Adjust width to fit small screens */
+      padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .form-row, .contact-methods {
+      flex-direction: column;
+  }
+
+  .send-message-btn {
+      width: 100%; /* Make the button full width */
+  }
+  h1, h2, h3, p {
+    font-size: smaller; /* Adjust font sizes for readability */
+}
+.input-group input, .input-group textarea, .send-message-btn {
+  padding: 12px; /* Increase padding for larger touch targets */
+}
+
+}
+
+
 .contact-section,
 .contact-form-container {
     width: 100%; /* Ensure the children take up 100% of their column width */

@@ -204,29 +204,48 @@
   
 @media (max-width: 768px) {
   .skills__info {
-    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
-    /* gap: 0; */
+      grid-template-columns: repeat(3, 1fr); /* Adjust grid to 3 columns for medium screens */
+  }
+
+  .skills__blob img {
+      width: 35px; /* Adjust image size */
+  }
+
+  .skills__title, .skills__name {
+      font-size: calc(1rem + 0.5vw); /* Make font size responsive */
   }
 }
 
 @media (max-width: 480px) {
   .skills__info {
-    grid-template-columns: 1fr; /* Single column for very small screens */
-    /* gap: 0; */
+      grid-template-columns: 1fr; /* Stack skills vertically on small screens */
+      gap: 1rem; /* Add some space between each skill */
+  }
+
+  .skills__blob {
+      width: 50px; /* Adjust skill blob size */
+      height: 70px;
+  }
+
+  .skills__blob img {
+      width: 30px; /* Adjust image size for smaller blobs */
   }
 
   .skills__title {
-    font-size: calc(var(--small-font-size) * 0.8); /* Slightly smaller text */
-  }
-  
-  .skills__blob {
-    width: 60px; /* Slightly larger hit area for touch screens */
-    height: 80px;
-  }
-  
-  .skills__blob img {
-    width: 30px; /* Larger icons for readability */
+      font-size: calc(1rem + 2vw); /* Make titles larger on small screens */
   }
 
+  .skills__name {
+      font-size: calc(0.9rem + 1vw); /* Adjust skill name font size */
+  }
+
+  .modal-body {
+      padding: 1em; /* Adjust padding for the modal body */
+      background-size: contain; /* Make background image fit without repeating */
+  }
+
+  .custom-btn {
+      padding: 20px; /* Adjust button padding */
+      font-size: 1rem; /* Adjust button font size */
+  }
 }
-

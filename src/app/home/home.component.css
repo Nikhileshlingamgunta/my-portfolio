@@ -138,3 +138,62 @@ form .btn-warning{
 }
 
 
+/* General Styles */
+
+/* Adjustments for smaller devices */
+@media (max-width: 768px) {
+  .p-profile {
+    height: 400px; /* Adjust the height of the profile for smaller devices */
+  }
+
+  .p-tag, .p-des, .p-des1 {
+    font-size: 1rem; /* Adjust the font size for smaller screens */
+    width: auto; /* Adjust width to auto for better flexibility */
+  }
+
+  .p-name {
+    font-size: 1.5rem; /* Scale down name font size */
+  }
+
+  .p-rgt-sec button {
+    font-size: 14px; /* Adjust button font size */
+    padding: 10px; /* Adjust button padding */
+  }
+
+  .stats-container {
+    flex-direction: column; /* Stack stats cards vertically */
+  }
+
+  .stat-card {
+    margin: 10px 0; /* Adjust margin for stacked layout */
+  }
+}
+
+@media (max-width: 480px) {
+  .col-sm-5, .col-sm-7 {
+    flex: 0 0 100%;
+    max-width: 100%; /* Make each column take full width */
+  }
+
+  .p-profile {
+    height: 300px; /* Further adjust the height for very small devices */
+  }
+
+  .p-des, .p-des1 {
+    font-size: 0.9rem; /* Further adjust the font size for very small screens */
+  }
+
+  .p-name {
+    font-size: 1.2rem; /* Further scale down name font size */
+  }
+
+  .p-rgt-sec {
+    padding: 0 15px; /* Adjust padding */
+  }
+
+  .p-rgt-sec button {
+    font-size: 12px; /* Further adjust button font size */
+    padding: 5px; /* Further adjust button padding */
+    margin-left: 10px; /* Adjust margin between buttons */
+  }
+}

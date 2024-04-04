@@ -27,4 +27,23 @@
   }
  
 
-  
+  @media (max-width: 768px) {
+    .modal-container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center elements when stacked */
+    }
+
+    .portfolio-element {
+        width: 90%; /* Adjust width to fit smaller screens */
+        margin-bottom: 20px; /* Add some space between elements */
+    }
+
+    .video-blog-container {
+        height: 50vh; /* Adjust video container height for mobile */
+    }
+
+    /* Adjust font sizes, margins, paddings for smaller screens within your components */
+    .some-component-class {
+        font-size: 14px; /* Example adjustment */
+    }
+}

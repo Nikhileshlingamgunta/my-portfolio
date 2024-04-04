@@ -13,3 +13,32 @@
     font-style: italic;
     font-weight: 600;
   }
+
+  @media (max-width: 768px) {
+    .picsum-img-wrapper img {
+        max-height: 50vh; /* Adjust the image height for medium devices */
+    }
+
+    .carousel-caption {
+        padding: 10px; /* Adjust padding */
+    }
+
+    .carousel-caption h3 {
+        font-size: calc(1.5rem + 2vw); /* Adjust heading size for better readability */
+    }
+
+    .carousel-caption p {
+        font-size: calc(1rem + 1vw); /* Adjust paragraph size for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .picsum-img-wrapper img {
+        max-height: 30vh; /* Further adjust the image height for small devices */
+    }
+
+    /* Further adjustments for carousel captions on small devices */
+    .carousel-caption h3, .carousel-caption p {
+        font-size: calc(1rem + 3vw); /* Increase text size slightly on very small screens */
+    }
+}
