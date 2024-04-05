@@ -18,6 +18,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { NgbCarousel, NgbCarouselModule, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
 import { BlogComponent } from './blog/blog.component';
 import { StatsComponent } from './stats/stats.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { StatsComponent } from './stats/stats.component';
     BrowserAnimationsModule,
     NgbCollapseModule,
     NgbCarouselModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration()

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-reach',
@@ -6,16 +7,34 @@ import { Component } from '@angular/core';
   styleUrl: './reach.component.css'
 })
 export class ReachComponent {
-  contact = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    message: ''
-  };
+    name:string ="";
+    email:string ="";
+    subject:string ="";
+    message:string ="";
+    
+    constructor(private http :HttpClient) {}
+    
+    send(){
+       let bodyData = {
+        "name": this.name,
+        "email" :this.email,
+        "subject": this.subject,
+        "message": this.message
+         };
+         this.http.post("http://localhost:8086/user/create",bodyData,{responseType: 'text'}).subscribe((data:any)=>{
+         console.log(data);
+         alert("Thank You for Submitting! I'll be in touch as soon as possible");
+    
+         this.name='';
+         this.email='';
+         this.subject='';
+         this.message= '';
 
-  onSubmit() {
-    // Process form submission here
-    console.log(this.contact);
-  }
-
+         const headerContent = document.getElementById('header-content')
+         if (headerContent){
+           headerContent.scrollIntoView({behavior:'smooth',block: "start"});
+         }
+        });
+    
+    }
 }

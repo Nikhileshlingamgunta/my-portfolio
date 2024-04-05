@@ -5,6 +5,9 @@
     border: 2px solid rgb(255, 255, 255);
     perspective: 1000px; /* Needed for 3D effect */
     position: relative;
+    opacity: 0; 
+    transform: scale(0.9); 
+    animation: popUp 0.5s ease-out forwards 0.5s; 
   }
   .p-profile div {
     width: 100%;
@@ -17,6 +20,18 @@
     backface-visibility: hidden; /* Hides the back of the flipped element */
     transition: transform 0.5s ease-in-out;
   }
+
+  @keyframes popUp {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+  
   
 .p-profile-front {
     background: url(/assets/Images/profile2.jpeg);
