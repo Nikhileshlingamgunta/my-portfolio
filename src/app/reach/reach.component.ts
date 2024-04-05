@@ -21,7 +21,7 @@ export class ReachComponent {
         "subject": this.subject,
         "message": this.message
          };
-         this.http.post("https://nikhi-portfolio-server.netlify.app/user/create",bodyData,{responseType: 'text'}).subscribe((data:any)=>{
+         this.http.post("https://nikhi-portfolio-server.netlify.app/user/create/",bodyData,{responseType: 'text'}).subscribe((data:any)=>{
          console.log(data);
          alert("Thank You for Submitting! I'll be in touch as soon as possible");
     
