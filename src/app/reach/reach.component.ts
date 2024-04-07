@@ -22,7 +22,7 @@ export class ReachComponent {
         "message": this.message
          };
          this.http.post("https://my-portfolio-backend-yypl.onrender.com/user/create",bodyData,{responseType: 'text'}).subscribe((data:any)=>{
-         console.log(data);
+        //  console.log(data);
          alert("Thank You for Submitting! I'll be in touch as soon as possible");
     
          this.name='';
