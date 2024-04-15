@@ -17,8 +17,8 @@ export class HomeComponent implements OnInit {
   downloadCV() {
     // Path to your file in the assets folder
     const link = document.createElement('a');
-    link.href = 'assets/CV.pdf';
-    link.download = 'CV.pdf';
+    link.href = 'assets/CV2.pdf';
+    link.download = 'CV2.pdf';
     link.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, view: window }));
     
     // For Firefox it is necessary to delay revoking the ObjectURL
