@@ -37,7 +37,7 @@
     background: url(/assets/Images/profile2.jpeg);
   }
   .p-profile-back {
-    background: url(/assets/Images/profile.jpeg); 
+    background: url(/assets/Images/profile3.jpg); 
     transform: rotateY(180deg); /* Flipped initially */
   }
   
