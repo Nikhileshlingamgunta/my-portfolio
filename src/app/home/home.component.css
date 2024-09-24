@@ -34,10 +34,10 @@
   
   
 .p-profile-front {
-    background: url(/assets/Images/profile2.jpeg);
+    background: url(/assets/Images/profile3.jpg);
   }
   .p-profile-back {
-    background: url(/assets/Images/profile3.jpg); 
+    background: url(/assets/Images/profile2.jpeg); 
     transform: rotateY(180deg); /* Flipped initially */
   }
   
