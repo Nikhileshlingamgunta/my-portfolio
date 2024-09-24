@@ -41,6 +41,13 @@ export class ReachComponent {
         .then((response) => {
           console.log('Email sent successfully!', response.status, response.text);
           alert('Your message has been sent!');
+
+          // Clear the form fields after success
+          this.name = '';
+          this.email = '';
+          this.subject = '';
+          this.message = '';
+
         }, (error) => {
           console.error('Failed to send email:', error);
           alert('There was an error sending your message.');
