@@ -157,8 +157,11 @@ form .btn-warning{
 
 /* Adjustments for smaller devices */
 @media (max-width: 768px) {
+  .container {
+    height: auto;
+  }
   .p-profile {
-    height: 400px; /* Adjust the height of the profile for smaller devices */
+    height: 400px; /* Adjust the height of the profile for smaller devices */  
   }
 
   .p-tag, .p-des, .p-des1 {
@@ -177,6 +180,8 @@ form .btn-warning{
 
   .stats-container {
     flex-direction: column; /* Stack stats cards vertically */
+    width: 100%;
+    padding: 10px;
   }
 
   .stat-card {
